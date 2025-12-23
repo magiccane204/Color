@@ -1,363 +1,190 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<style>
- 			.p{
-				box-shadow:0 0 30px silver;
- 				width:300px;
-				height:200px;	
-				align-items:center;
- 			}
-			.p:hover{
-				box-shadow:0 0 30px black;
-				transition:0.5s;
-			}
- 			.black{
-				background-color:black;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.red{
-				background-color:red;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.green{
-				background-color:green;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.blue{
-				background-color:blue;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.yellow{
-				background-color:yellow;
-				width:20px;
-				height:20px;
-				display:inline-block;
-				}
- 			.purple{
-				background-color:purple;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.pink{
-				background-color:pink;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.orange{
-				background-color:orange;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.brown{
-				background-color:brown;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.grey{
-				background-color:grey;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-	
-			}
-			.cyan{
-				background-color:#00FFFF;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.magenta{
-				background-color:#FF00FF;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.indigo{
-				background-color:#4B0082;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.turqoise{
-				background-color:#40E0D0;
-				width:20px;
-				height:20px;
-				display:inline-block;
-	
-			}
-			.silver{
-				background-color:#C0C0C0;
-				width:20px;
-				height:20px;
-				display:inline-block;
-			}
-	
-	
- 			.row{
-				display:flex;
-				align-items:center;
-				gap:10px;
-			}
-			.all{
-				display:flex; 
-				gap:10px;
-			}
-			button{
-				background-color:#B7E892;
-				font-size: 20px;
-				border:flat;
-				border-radius:5px;
-				box-shadow: 0 0 20px #A3D5FF;
-			}
+<head>
+  <title>My website</title>
 
+  <style>
+    .p{
+      box-shadow: 0 0 30px silver;
+      width: 300px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
 
-		</style>
-<title>
-	My website
-</title>
+    .p:hover{
+      box-shadow: 0 0 30px black;
+      transition: 0.5s;
+    }
 
-	</head>
-	<body>
-		<script>
-			function all(){
-			alert("Button is clicked");
-			}
-		</script>
-<div class=all>
-	<div class=p> 
-			<div class=row> 
-				<h1 >Black </h1> 
-				<div class=black></div> 
-			</div>
-		<p>
-			It is a color which absorbs all the colors to make a single color 			black
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
+    .row{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-	<div class=p> 
-			<div class=row> 
-				<h1 >Red </h1> 
-				<div class=red></div> 
-			</div>
-		<p>
-			It is one of the primary colors the create other colors
-		</p>
-		<button>
-			Click me
-		</button>
+    .all{
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
 
-		</div>
-	<div class=p> 
-			<div class=row> 
-				<h1 >Green </h1> 
-				<div class=green></div> 
-			</div>
-		<p>
-			It is one of the primary colors the create other colors
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
-	<div class=p> 
-			<div class=row> 
-				<h1 >Blue </h1> 
-				<div class=blue></div> 
-			</div>
-		<p>
-			It is one of the primary colors the create other colors
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
-	<div class=p> 
-			<div class=row> 
-				<h1 >Yellow</h1> 
-				<div class=yellow></div> 
-			</div>
-		<p>
-			It is one of the primary colors the create other colors
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
-		</div>
+    button{
+      background-color: #B7E892;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 20px #A3D5FF;
+    }
+
+    .black{background:black;}
+    .red{background:red;}
+    .green{background:green;}
+    .blue{background:blue;}
+    .yellow{background:yellow;}
+    .purple{background:purple;}
+    .pink{background:pink;}
+    .orange{background:orange;}
+    .brown{background:brown;}
+    .grey{background:grey;}
+    .cyan{background:#00FFFF;}
+    .magenta{background:#FF00FF;}
+    .indigo{background:#4B0082;}
+    .turquoise{background:#40E0D0;}
+    .silver{background:#C0C0C0;}
+
+    .black,.red,.green,.blue,.yellow,.purple,.pink,.orange,
+    .brown,.grey,.cyan,.magenta,.indigo,.turquoise,.silver{
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+
+<script>
+  function all(){
+    alert("Button is clicked");
+  }
+</script>
+
+<div class="all">
+  <div class="p">
+    <div class="row">
+      <h1>Black</h1>
+      <div class="black"></div>
+    </div>
+    <p>It absorbs all colors.</p>
+    <button onclick="all()">Click me</button>
+  </div>
+
+  <div class="p">
+    <div class="row">
+      <h1>Red</h1>
+      <div class="red"></div>
+    </div>
+    <p>Primary color.</p>
+    <button onclick="all()">Click me</button>
+  </div>
+
+  <div class="p">
+    <div class="row">
+      <h1>Green</h1>
+      <div class="green"></div>
+    </div>
+    <p>Primary color.</p>
+    <button onclick="all()">Click me</button>
+  </div>
+
+  <div class="p">
+    <div class="row">
+      <h1>Blue</h1>
+      <div class="blue"></div>
+    </div>
+    <p>Primary color.</p>
+    <button onclick="all()">Click me</button>
+  </div>
 </div>
-<br>
 
-<div class=all>
+<div class="all">
+  <div class="p">
+    <div class="row">
+      <h1>Purple</h1>
+      <div class="purple"></div>
+    </div>
+    <p>Secondary color.</p>
+    <button onclick="all()">Click me</button>
+  </div>
 
+  <div class="p">
+    <div class="row">
+      <h1>Pink</h1>
+      <div class="pink"></div>
+    </div>
+    <p>Red + White.</p>
+    <button onclick="all()">Click me</button>
+  </div>
 
-	
-	
-		<div class=p> 
-			<div class=row> 
-				<h1 >Purple </h1> 
-				<div class=purple></div> 
-			</div>
-		<p>
-			It is a colour derived from red and blue, making it a secondary color
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
-		<div class=p>
-			<div class=row> 
-				<h1 >Pink </h1> 
-				<div class=pink></div> 
-			</div>
-		<p>
-			This is the mixture of red and white and its also a secondary color
-		</p>
-		<button>
-			Click me
-		</button>
+  <div class="p">
+    <div class="row">
+      <h1>Orange</h1>
+      <div class="orange"></div>
+    </div>
+    <p>Red + Yellow.</p>
+    <button onclick="all()">Click me</button>
+  </div>
 
-		</div>
-	<div class=p> 
-			<div class=row> 
-				<h1 >Orange </h1> 
-				<div class=orange></div> 
-			</div>
-		<p>
-			This color is made with the fusion of red and yellow
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
-	<div class=p> 
-			<div class=row> 
-				<h1 >Brown </h1> 
-				<div class=brown></div> 
-			</div>
-		<p>
-			It is one of the primary colors the create other colors
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
-	<div class=p> 
-			<div class=row> 
-				<h1 >Grey</h1> 
-				<div class=grey></div> 
-			</div>
-		<p>
-			It is one of the primary colors the create other colors
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
+  <div class="p">
+    <div class="row">
+      <h1>Grey</h1>
+      <div class="grey"></div>
+    </div>
+    <p>Neutral color.</p>
+    <button onclick="all()">Click me</button>
+  </div>
 </div>
-<br>
 
-<div class=all>
+<div class="all">
+  <div class="p">
+    <div class="row">
+      <h1>Cyan</h1>
+      <div class="cyan"></div>
+    </div>
+    <p>Secondary color.</p>
+    <button onclick="all()">Click me</button>
+  </div>
 
+  <div class="p">
+    <div class="row">
+      <h1>Magenta</h1>
+      <div class="magenta"></div>
+    </div>
+    <p>Primary color.</p>
+    <button onclick="all()">Click me</button>
+  </div>
 
-	
-	
-		<div class=p> 
-			<div class=row> 
-				<h1 >Cyan </h1> 
-				<div class=cyan></div> 
-			</div>
-		<p>
-			It is a color which absorbs all the colors to make a single color 			black
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
-		<div class=p>
-			<div class=row> 
-				<h1 >Magenta </h1> 
-				<div class=magenta></div> 
-			</div>
-		<p>
-			It is one of the primary colors the create other colors
-		</p>
-		<button>
-			Click me
-		</button>
+  <div class="p">
+    <div class="row">
+      <h1>Indigo</h1>
+      <div class="indigo"></div>
+    </div>
+    <p>Between blue and violet.</p>
+    <button onclick="all()">Click me</button>
+  </div>
 
-		</div>
-	<div class=p> 
-			<div class=row> 
-				<h1 >Indigo </h1> 
-				<div class=indigo></div> 
-			</div>
-		<p>
-			It is one of the primary colors the create other colors
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
-	<div class=p> 
-			<div class=row> 
-				<h1>Turqoise</h1> 
-				<div class=turqoise></div> 
-			</div>
-		<p>
-			It is one of the primary colors the create other colors
-		</p>
-		<button>
-			Click me
-		</button>
-		</div>
-	<div class=p> 
-			<div class=row> 
-				<h1> Silver</h1> 
-				<div class=silver></div> 
-			</div>
-		<p>
-			It is one of the primary colors the create other colors
-		</p>
-		<button onclick="all()">
-			Click me
-		</button>
-		</div>
+  <div class="p">
+    <div class="row">
+      <h1>Silver</h1>
+      <div class="silver"></div>
+    </div>
+    <p>Metallic shade.</p>
+    <button onclick="all()">Click me</button>
+  </div>
+</div>
 
-
-	</body>
-<html>
-
-
-
-
-
-
-
+</body>
+</html>
