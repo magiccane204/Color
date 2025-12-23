@@ -37,6 +37,7 @@
       border: none;
       border-radius: 5px;
       box-shadow: 0 0 20px #A3D5FF;
+      cursor: pointer;
     }
 
     .black{background:black;}
@@ -67,9 +68,16 @@
 <body>
 
 <script>
-  function all(){
-    alert("Button is clicked");
+  function all(color) {
+    alert(color + " button is clicked");
   }
+
+  document.querySelectorAll(".p").forEach(card => {
+    const color = card.querySelector("h1").innerText;
+    const button = card.querySelector("button");
+
+    button.addEventListener("click", () => all(color));
+  });
 </script>
 
 <div class="all">
@@ -79,7 +87,7 @@
       <div class="black"></div>
     </div>
     <p>It absorbs all colors.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 
   <div class="p">
@@ -88,7 +96,7 @@
       <div class="red"></div>
     </div>
     <p>Primary color.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 
   <div class="p">
@@ -97,7 +105,7 @@
       <div class="green"></div>
     </div>
     <p>Primary color.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 
   <div class="p">
@@ -106,7 +114,7 @@
       <div class="blue"></div>
     </div>
     <p>Primary color.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 </div>
 
@@ -117,7 +125,7 @@
       <div class="purple"></div>
     </div>
     <p>Secondary color.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 
   <div class="p">
@@ -126,7 +134,7 @@
       <div class="pink"></div>
     </div>
     <p>Red + White.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 
   <div class="p">
@@ -135,7 +143,7 @@
       <div class="orange"></div>
     </div>
     <p>Red + Yellow.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 
   <div class="p">
@@ -144,7 +152,7 @@
       <div class="grey"></div>
     </div>
     <p>Neutral color.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 </div>
 
@@ -155,7 +163,7 @@
       <div class="cyan"></div>
     </div>
     <p>Secondary color.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 
   <div class="p">
@@ -164,7 +172,7 @@
       <div class="magenta"></div>
     </div>
     <p>Primary color.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 
   <div class="p">
@@ -173,7 +181,7 @@
       <div class="indigo"></div>
     </div>
     <p>Between blue and violet.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 
   <div class="p">
@@ -182,9 +190,10 @@
       <div class="silver"></div>
     </div>
     <p>Metallic shade.</p>
-    <button onclick="all()">Click me</button>
+    <button>Click me</button>
   </div>
 </div>
 
 </body>
 </html>
+
