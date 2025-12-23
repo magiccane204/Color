@@ -71,129 +71,85 @@
   function all(color) {
     alert(color + " button is clicked");
   }
-
-  document.querySelectorAll(".p").forEach(card => {
-    const color = card.querySelector("h1").innerText;
-    const button = card.querySelector("button");
-
-    button.addEventListener("click", () => all(color));
-  });
 </script>
 
 <div class="all">
   <div class="p">
-    <div class="row">
-      <h1>Black</h1>
-      <div class="black"></div>
-    </div>
+    <div class="row"><h1>Black</h1><div class="black"></div></div>
     <p>It absorbs all colors.</p>
-    <button>Click me</button>
+    <button onclick="all('Black')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row">
-      <h1>Red</h1>
-      <div class="red"></div>
-    </div>
+    <div class="row"><h1>Red</h1><div class="red"></div></div>
     <p>Primary color.</p>
-    <button>Click me</button>
+    <button onclick="all('Red')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row">
-      <h1>Green</h1>
-      <div class="green"></div>
-    </div>
+    <div class="row"><h1>Green</h1><div class="green"></div></div>
     <p>Primary color.</p>
-    <button>Click me</button>
+    <button onclick="all('Green')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row">
-      <h1>Blue</h1>
-      <div class="blue"></div>
-    </div>
+    <div class="row"><h1>Blue</h1><div class="blue"></div></div>
     <p>Primary color.</p>
-    <button>Click me</button>
+    <button onclick="all('Blue')">Click me</button>
   </div>
 </div>
 
 <div class="all">
   <div class="p">
-    <div class="row">
-      <h1>Purple</h1>
-      <div class="purple"></div>
-    </div>
+    <div class="row"><h1>Purple</h1><div class="purple"></div></div>
     <p>Secondary color.</p>
-    <button>Click me</button>
+    <button onclick="all('Purple')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row">
-      <h1>Pink</h1>
-      <div class="pink"></div>
-    </div>
+    <div class="row"><h1>Pink</h1><div class="pink"></div></div>
     <p>Red + White.</p>
-    <button>Click me</button>
+    <button onclick="all('Pink')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row">
-      <h1>Orange</h1>
-      <div class="orange"></div>
-    </div>
+    <div class="row"><h1>Orange</h1><div class="orange"></div></div>
     <p>Red + Yellow.</p>
-    <button>Click me</button>
+    <button onclick="all('Orange')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row">
-      <h1>Grey</h1>
-      <div class="grey"></div>
-    </div>
+    <div class="row"><h1>Grey</h1><div class="grey"></div></div>
     <p>Neutral color.</p>
-    <button>Click me</button>
+    <button onclick="all('Grey')">Click me</button>
   </div>
 </div>
 
 <div class="all">
   <div class="p">
-    <div class="row">
-      <h1>Cyan</h1>
-      <div class="cyan"></div>
-    </div>
+    <div class="row"><h1>Cyan</h1><div class="cyan"></div></div>
     <p>Secondary color.</p>
-    <button>Click me</button>
+    <button onclick="all('Cyan')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row">
-      <h1>Magenta</h1>
-      <div class="magenta"></div>
-    </div>
+    <div class="row"><h1>Magenta</h1><div class="magenta"></div></div>
     <p>Primary color.</p>
-    <button>Click me</button>
+    <button onclick="all('Magenta')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row">
-      <h1>Indigo</h1>
-      <div class="indigo"></div>
-    </div>
+    <div class="row"><h1>Indigo</h1><div class="indigo"></div></div>
     <p>Between blue and violet.</p>
-    <button>Click me</button>
+    <button onclick="all('Indigo')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row">
-      <h1>Silver</h1>
-      <div class="silver"></div>
-    </div>
+    <div class="row"><h1>Silver</h1><div class="silver"></div></div>
     <p>Metallic shade.</p>
-    <button>Click me</button>
+    <button onclick="all('Silver')">Click me</button>
   </div>
 </div>
 
 </body>
 </html>
-
