@@ -4,6 +4,11 @@
   <title>My website</title>
 
   <style>
+    body{
+      transition: background-color 0.5s;
+      font-family: serif;
+    }
+
     .p{
       box-shadow: 0 0 30px silver;
       width: 300px;
@@ -12,11 +17,11 @@
       flex-direction: column;
       justify-content: center;
       padding: 10px;
+      background: white;
     }
 
     .p:hover{
       box-shadow: 0 0 30px black;
-      transition: 0.5s;
     }
 
     .row{
@@ -38,6 +43,7 @@
       border-radius: 5px;
       box-shadow: 0 0 20px #A3D5FF;
       cursor: pointer;
+      padding: 5px;
     }
 
     .black{background:black;}
@@ -48,52 +54,58 @@
     .purple{background:purple;}
     .pink{background:pink;}
     .orange{background:orange;}
-    .brown{background:brown;}
     .grey{background:grey;}
     .cyan{background:#00FFFF;}
     .magenta{background:#FF00FF;}
     .indigo{background:#4B0082;}
-    .turquoise{background:#40E0D0;}
     .silver{background:#C0C0C0;}
 
-    .black,.red,.green,.blue,.yellow,.purple,.pink,.orange,
-    .brown,.grey,.cyan,.magenta,.indigo,.turquoise,.silver{
+    .color-box{
       width: 20px;
       height: 20px;
       display: inline-block;
+    }
+
+    #info{
+      margin: 20px;
+      font-size: 24px;
+      font-weight: bold;
     }
   </style>
 </head>
 
 <body>
 
+<h2 id="info">Click a color</h2>
+
 <script>
-  function all(color) {
-    alert(color + " button is clicked");
+  function all(color){
+    document.body.style.backgroundColor = color.toLowerCase();
+    document.getElementById("info").innerText = color + " selected";
   }
 </script>
 
 <div class="all">
   <div class="p">
-    <div class="row"><h1>Black</h1><div class="black"></div></div>
+    <div class="row"><h1>Black</h1><div class="color-box black"></div></div>
     <p>It absorbs all colors.</p>
     <button onclick="all('Black')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row"><h1>Red</h1><div class="red"></div></div>
+    <div class="row"><h1>Red</h1><div class="color-box red"></div></div>
     <p>Primary color.</p>
     <button onclick="all('Red')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row"><h1>Green</h1><div class="green"></div></div>
+    <div class="row"><h1>Green</h1><div class="color-box green"></div></div>
     <p>Primary color.</p>
     <button onclick="all('Green')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row"><h1>Blue</h1><div class="blue"></div></div>
+    <div class="row"><h1>Blue</h1><div class="color-box blue"></div></div>
     <p>Primary color.</p>
     <button onclick="all('Blue')">Click me</button>
   </div>
@@ -101,25 +113,25 @@
 
 <div class="all">
   <div class="p">
-    <div class="row"><h1>Purple</h1><div class="purple"></div></div>
+    <div class="row"><h1>Purple</h1><div class="color-box purple"></div></div>
     <p>Secondary color.</p>
     <button onclick="all('Purple')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row"><h1>Pink</h1><div class="pink"></div></div>
+    <div class="row"><h1>Pink</h1><div class="color-box pink"></div></div>
     <p>Red + White.</p>
     <button onclick="all('Pink')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row"><h1>Orange</h1><div class="orange"></div></div>
+    <div class="row"><h1>Orange</h1><div class="color-box orange"></div></div>
     <p>Red + Yellow.</p>
     <button onclick="all('Orange')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row"><h1>Grey</h1><div class="grey"></div></div>
+    <div class="row"><h1>Grey</h1><div class="color-box grey"></div></div>
     <p>Neutral color.</p>
     <button onclick="all('Grey')">Click me</button>
   </div>
@@ -127,25 +139,25 @@
 
 <div class="all">
   <div class="p">
-    <div class="row"><h1>Cyan</h1><div class="cyan"></div></div>
+    <div class="row"><h1>Cyan</h1><div class="color-box cyan"></div></div>
     <p>Secondary color.</p>
     <button onclick="all('Cyan')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row"><h1>Magenta</h1><div class="magenta"></div></div>
+    <div class="row"><h1>Magenta</h1><div class="color-box magenta"></div></div>
     <p>Primary color.</p>
     <button onclick="all('Magenta')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row"><h1>Indigo</h1><div class="indigo"></div></div>
+    <div class="row"><h1>Indigo</h1><div class="color-box indigo"></div></div>
     <p>Between blue and violet.</p>
     <button onclick="all('Indigo')">Click me</button>
   </div>
 
   <div class="p">
-    <div class="row"><h1>Silver</h1><div class="silver"></div></div>
+    <div class="row"><h1>Silver</h1><div class="color-box silver"></div></div>
     <p>Metallic shade.</p>
     <button onclick="all('Silver')">Click me</button>
   </div>
